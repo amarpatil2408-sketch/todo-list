@@ -20,6 +20,10 @@ The application allows users to create, edit, complete, delete, and filter tasks
 - Save tasks using Local Storage
 - Responsive design for desktop and mobile
 
+## Preview
+
+![Todo List Preview](assets/images/todo-preview.png)
+
 ## Technologies Used
 
 - HTML5
