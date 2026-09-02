@@ -4,6 +4,10 @@ A simple and responsive Todo List web application built using HTML, CSS, and Jav
 
 The application allows users to create, edit, complete, delete, and filter tasks. Todos are stored in the browser using Local Storage, so tasks remain available after refreshing the page.
 
+## Live Demo
+
+[View the Todo List](https://amarpatil2408-sketch.github.io/todo-list/)
+
 ## Features
 
 - Add new tasks
