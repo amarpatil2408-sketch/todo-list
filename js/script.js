@@ -317,6 +317,11 @@ completedBtn.addEventListener("click", showCompletedTodos);
 
 clearCompletedBtn.addEventListener("click", clearCompleted);
 
+taskInput.addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        addTodo();
+    }
+});
 
 // ========================================
 // 14. Load saved Todos when app starts
