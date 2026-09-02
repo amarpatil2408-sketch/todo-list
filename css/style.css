@@ -1,0 +1,294 @@
+/* ========================================
+   RESET
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   PAGE
+======================================== */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 60px 20px;
+}
+
+
+/* ========================================
+   TODO APP
+======================================== */
+
+.todo-app {
+    width: 100%;
+    max-width: 600px;
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #1e293b;
+}
+
+
+/* ========================================
+   TASK INPUT
+======================================== */
+
+.task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.task-input input {
+    flex: 1;
+
+    padding: 13px 15px;
+
+    font-size: 16px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    outline: none;
+}
+
+.task-input input:focus {
+    border-color: #64748b;
+}
+
+.task-input button {
+    padding: 13px 22px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+.task-input button:hover {
+    opacity: 0.85;
+}
+
+
+/* ========================================
+   FILTERS
+======================================== */
+
+.filters {
+    display: flex;
+    gap: 8px;
+
+    margin-bottom: 20px;
+}
+
+.filters button {
+    padding: 9px 15px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+.filters button:hover {
+    opacity: 0.8;
+}
+
+
+/* ========================================
+   TODO LIST
+======================================== */
+
+.todo-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+
+/* ========================================
+   TODO ITEM
+======================================== */
+
+.todo-list > div {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 14px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 9px;
+}
+
+
+/* Checkbox */
+
+.todo-checkbox {
+    width: 18px;
+    height: 18px;
+
+    cursor: pointer;
+}
+
+
+/* Todo text */
+
+.todo-list span {
+    flex: 1;
+
+    font-size: 16px;
+
+    color: #334155;
+
+    word-break: break-word;
+}
+
+
+/* ========================================
+   TODO BUTTONS
+======================================== */
+
+.edit-btn,
+.delete-btn {
+    border: none;
+
+    padding: 7px 11px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 13px;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+    opacity: 0.75;
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding-top: 15px;
+
+    border-top: 1px solid #e2e8f0;
+}
+
+footer p {
+    font-size: 14px;
+
+    color: #64748b;
+}
+
+footer button {
+    padding: 8px 12px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 13px;
+}
+
+footer button:hover {
+    opacity: 0.75;
+}
+
+
+/* ========================================
+   MOBILE RESPONSIVENESS
+======================================== */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 25px 12px;
+    }
+
+    .todo-app {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    .task-input {
+        flex-direction: column;
+    }
+
+    .task-input button {
+        width: 100%;
+    }
+
+    .filters {
+        justify-content: center;
+    }
+
+    .todo-list > div {
+        flex-wrap: wrap;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 12px;
+    }
+}

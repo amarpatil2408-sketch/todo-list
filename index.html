@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Todo List</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="todo-app">
+
+        <!-- Header -->
+        <header>
+            <h1>My Todo List</h1>
+        </header>
+
+        <!-- Task Input -->
+        <section class="task-input">
+            <input type="text" id="task-input" placeholder="Enter a task...">
+            <button id="add-task-btn">Add</button>
+        </section>
+
+        <!-- Filters -->
+        <section class="filters">
+            <button id="all-btn">All</button>
+            <button id="active-btn">Active</button>
+            <button id="completed-btn">Completed</button>
+        </section>
+
+        <!-- Todo List -->
+        <section class="todo-list" id="todo-list">
+            <!-- JavaScript will add tasks here -->
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p id="task-count">0 tasks remaining</p>
+            <button id="clear-completed-btn">Clear Completed</button>
+        </footer>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
